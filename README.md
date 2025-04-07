@@ -1,46 +1,95 @@
-# Для запуска проекта, необходимо выполнить следующие шаги:
+# Employee Management System
 
-1. Открыть терминал (или командную строку) и перейти в корневую директорию проекта.
-```
+A full-stack application for managing employee records with React frontend and Express backend.
+
+## Features
+- Employee CRUD operations
+- User authentication
+- Responsive design
+- Database integration with Prisma
+
+## Setup Instructions
+
+### English
+1. Clone the repository:
+```bash
+git clone https://github.com/ivanko8886/hihi.git
 cd employees-react-express
 ```
 
-3. Установить зависимости для серверной части проекта. Введите следующую команду в терминале:
-```
+2. Install dependencies:
+```bash
 npm install
-```
-
-4. Переименовать файл .env.local (убрать .local)
-```
-.env
-```
-
-5. Сгенерировать типы
-```
-npx prisma generate
-```
-
-6. Создать базу данных и сделать миграцию
-```
-npx prisma migrate dev
-```
-
-7. Перейти в директорию client и установить зависимости для клиентской части проекта.
-```
 cd client
 npm install
-```
-
-8. Вернуться в корневую директорию проекта.
-```
 cd ..
 ```
 
-9. Запустить проект. Введите следующую команду в терминале:
+3. Configure environment:
+- Rename `.env.local` to `.env`
+- Add your database credentials to `.env`
+
+4. Set up database:
+```bash
+npx prisma generate
+npx prisma migrate dev
 ```
+
+5. Run development server:
+```bash
 npm run dev
 ```
 
-10. Открыть браузер и перейти по адресу http://localhost:3000, чтобы увидеть запущенный проект.
+6. Open in browser:
+```
+http://localhost:3000
+```
 
-Успешный запуск проекта должен показать список сотрудников в браузере. Если возникли какие-либо проблемы во время установки или запуска проекта, проверьте, что все вышеперечисленные шаги были выполнены правильно и в соответствии с инструкцией.
+### Русский
+1. Клонировать репозиторий:
+```bash
+git clone https://github.com/ivanko8886/hihi.git
+cd employees-react-express
+```
+
+2. Установить зависимости:
+```bash
+npm install
+cd client
+npm install
+cd ..
+```
+
+3. Настроить окружение:
+- Добавить данные для подключения к БД в `.env`
+
+4. Настроить базу данных:
+```bash
+npx prisma generate
+npx prisma migrate dev
+```
+
+5. Запустить сервер разработки:
+```bash
+npm run dev
+```
+
+6. Открыть в браузере:
+```
+http://localhost:3000
+```
+
+## Production Build
+```bash
+cd client
+npm run build
+cd ..
+npm start
+```
+
+## Technologies Used
+- React
+- Express
+- Prisma
+- PostgreSQL
+- Redux Toolkit
