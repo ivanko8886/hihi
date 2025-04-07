@@ -1,0 +1,60 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.primary {
+  background-color: #ef233c;
+  color: white;
+  box-shadow: 0 2px 4px rgba(239, 35, 60, 0.3);
+}
+
+.primary:hover {
+  background-color: #d90429;
+  transform: translateY(-1px);
+}
+
+.secondary {
+  background-color: transparent;
+  color: #ef233c;
+  border-color: #ef233c;
+}
+
+.secondary:hover {
+  background-color: rgba(239, 35, 60, 0.1);
+}
+
+.headerButton {
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.withIcon {
+  padding-left: 12px;
+  padding-right: 16px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
