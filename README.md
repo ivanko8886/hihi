@@ -1,3 +1,14 @@
+Текущий прогресс:
+Есть монолитная структура
+Частичное разделение сервисов уже начато (auth, employees)
+Используется JWT и Prisma с PostgreSQL
+Необходимо:
+Создать Dockerfile для фронтенда (nginx)
+Разделить существующий бэкенд на микросервисы
+Настроить взаимодействие между сервисами
+Создать docker-compose для оркестрации
+
+
 # Employee Management System
 
 A full-stack application for managing employee records with React frontend and Express backend.
